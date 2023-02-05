@@ -1,0 +1,12 @@
+values:
+  # Only input is require
+  # Support list:
+  #   - input and output is file
+  #   - input and output is directory
+  #   - input file and output is directory
+  - name: templates
+    input: "{{.current}}/data/templates"
+    output: "{{.current}}/data/outputs"
+
+data:
+  test: true
