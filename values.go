@@ -39,7 +39,7 @@ func (v *Values) Load(m mapper.Mapper, variable mapper.Mapper) error {
 	}
 
 	var isInFile = IsTmpl(in)
-	var isOutFile = IsTmpl(out)
+	var isOutFile = IsFile(out)
 
 	v.logger.Debug("Is input file: %t", isInFile)
 	v.logger.Debug("Is output file: %t", isOutFile)

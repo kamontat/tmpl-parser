@@ -10,6 +10,11 @@ func IsTmpl(f string) bool {
 	return filepath.Ext(f) == TEMPLATE_EXTENSION
 }
 
+// Quick check is input is file by extension
+func IsFile(f string) bool {
+	return filepath.Ext(f) != ""
+}
+
 func CreateOutFile(s string) (*os.File, error) {
 	return os.OpenFile(
 		s,
